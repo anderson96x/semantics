@@ -7,7 +7,8 @@
   
   <title>Example with Semantic Tags</title>
   
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/lib/semantic-ui/semantic.min.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/favicon.ico" sizes="any">
 </head>
 
@@ -17,16 +18,17 @@
   <header>
     <h1>My Awesome Website</h1>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
-      </ul>
+      <div id="menu" class="ui inverted secondary pointing menu fixed">
+        <a class="item active" href="#home">Home</a>
+        <a class="item" href="#about">About</a>
+        <a class="item" href="#blog">Blog</a>
+      </div>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
+    <div class="ui gray vertical masthead center aligned segment">
     <!-- Section 1: Introduction -->
     <section id="home">
       <h2>Welcome to My Website</h2>
@@ -50,7 +52,7 @@
         <p><mark>Tip:</mark> Make sure to always use semantic tags for better SEO!</p>
       </aside>
     </article>
-
+    <div style="height: 1500px;"><p>yeah</p></div>
     <!-- Section 3: More Details -->
     <section>
       <h3>Want to know more?</h3>
@@ -60,6 +62,7 @@
       </details>
     </section>
   </main>
+</div>
 
   <!-- Footer Section -->
   <footer>
@@ -68,7 +71,12 @@
   </footer>
   
   
-  <script src="js/app.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+  </script>
+  <script src="/lib/semantic-ui/semantic.min.js"></script>
 
 </body>
 
