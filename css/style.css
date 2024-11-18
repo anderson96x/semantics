@@ -4,3 +4,8 @@
   height: 70px;
   justify-content: center;
 }
+
+.container {
+  margin-top: 70px;
+  text-align: center;
+}
